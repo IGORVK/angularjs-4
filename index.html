@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8" />
+	<title>angularjs-4-define-method</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="main.js"></script> 
+</head>
+<body>
+    
+  <div ng-controller="firstController">
+       {{hello}}
+       {{getBookmark()}}
+       <button ng-click = "setHello('Foo')">Foo</button>
+       <button ng-click = "setHello('Bar')">Bar</button>
+       {{mySuperFactory.hello()}}
+       
+  </div>
+  
+
+</body>
+</html>
